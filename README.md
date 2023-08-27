@@ -20,10 +20,10 @@ What defines our top best-performing zipcodes?
 Return On Investment: We will use the Return On Investment ratio to measure 'best'.
 The metrics we will be optimizing against/minimizing are the AIC and RMSE. The lower the AIC and RMSE, the better our model will be at forecasting.
 # Data Description 
-The dataset contains 14722 rows and 272 columns
-Some columns in the dataset contain missing values
-Data has both continuous and categorical features comprising the following data types; objects, integers, floats
-The dataset is in wide format with the time periods appearing as columns. We converted it into a long format
+* The dataset contains 14722 rows and 272 columns
+* Some columns in the dataset contain missing values
+* Data has both continuous and categorical features comprising the following data types; objects, integers, floats
+* The dataset is in wide format with the time periods appearing as columns. We converted it into a long format
 # Data Preparation
 We dropped the unnecessary columns, 'Metro ' and 'CountyName' from our dataset to make it easier to work with.
 We also renamed the column, 'RegionName' to 'Zipcode' 
