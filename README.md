@@ -1,4 +1,6 @@
 # Zillow Real Estate Forecasting by Boma Yangu Inv
+![image](https://github.com/Kinya01/Zillow-Real---Estate-Forecasting/assets/128283613/47e56f90-3df9-4e61-b324-02a130b3fe6f)
+
 # Overview
 Boma Yangu real estate investment firm is seeking to make strategic real estate investments in specific geographic areas in the US. Their aim is to maximize returns on their investments by identifying regions with high growth potential, favorable market conditions, and strong demand for real estate properties. They have contracted our services to analyze relevant data and provide a recommendation on the top 5 best zip codes to invest in.
 # Objectives
@@ -105,51 +107,67 @@ We used the ARIMA time series modelling technique as our baseline model and impr
 
 * Sorting the zipcodes by ROIs to finally determine the top 5 best zipcodes.
 
-### Conclusion and Recommendations
-As per the analysis, the top 5 best Zipcodes to invest in based on a combination of predicted sale price and positive predicted ROI, which indicates the potential for profitable return include:
+### Conclusion/ Interpretation
+From our analysis, the best Zipcodes to invest in based on a combination of predicted sale price and positive predicted ROI are:
 
-Zip Code 48822:
+# Zip Code 48822:
 
-* Predicted Sale Price: $185,300
+* Investment Value: $184,700
 
-* Predicted ROI: 33.00%
+* Predicted Sale Price after 2 years: $197,993.26
 
-* Zip Code 48822 emerges as the most promising investment opportunity. With a high predicted sale price and a positive ROI of 33.00%, investors could expect attractive returns from properties in this area.
+* Predicted ROI: 7.20%
 
-Zip Code 40107:
+This Zipcode stands out with a promising ROI of 7.20%, indicating a potential return on investment. With an initial investment of $184,700, the projected sale price after 2 years suggests favorable growth potential. This could be attributed to positive market conditions and demand factors.
 
-* Predicted Sale Price: $148,300
+# Zip Code 49309:
 
-* Predicted ROI: 2.95e+49%
+* Investment Value: $49,200
 
-* While the predicted ROI for Zip Code 40107 is notably high, the comparatively modest predicted sale price adds to the appeal of considering this area for investment
+* Predicted Sale Price after 2 years: $51,777.49
 
-Zip Code 48894:
+* Predicted ROI: 5.24%
 
-* Predicted Sale Price: $161,000
+Zip code 49309 offers a solid investment option with a predicted ROI of 5.24%. Despite its lower initial investment value, the projected sale price after 2 years indicates notable growth potential. This suggests a favorable investment opportunity considering the moderate risk
 
-* Predicted ROI: 0.44%
+# Zip Code 29645:
 
-* With a positive ROI of 0.44%, Zip Code 48894 presents a stable investment option. Although the ROI is relatively low compared to some others, the predicted sale price contributes to its attractiveness.
+* Investment Value: $116,500
 
-Zip Code 48835:
+* Predicted Sale Price after 2 years: $118,177.38
 
-* Predicted Sale Price: $138,600
+* Predicted ROI: 1.44%
 
-* Predicted ROI: 0.43%
+Zip code 29645 presents a stable investment prospect with a predicted ROI of 1.44%. While the ROI is relatively modest, the expected increase in sale price after 2 years could provide steady returns, suitable for conservative investors seeking stable growth.
 
-* Similarly, Zip Code 48835 offers a relatively low but still positive ROI of 0.43%. The predicted sale price supports its consideration for investment.
+# Zip Code 48835:
 
-Zip Code 15486:
+* Investment Value: $138,600
 
-* Predicted Sale Price: $124,300
+* Predicted Sale Price after 2 years: $138,618.56
 
-* Predicted ROI: 0.35%
+* Predicted ROI: 0.01%
 
-* Rounding up the top 5, Zip Code 15486 demonstrates a positive ROI of 0.35%. While the ROI is not the highest, the predicted sale price contributes positively to its investment potential.
-## Next Steps
-* Collect more data with added exogenous variables like economic indicators, interest rates and demographic data that could potentially influence the housing price values, then model them in a SARIMAX model. This could lead to better predictions and better models overall
+Zip code 48835 offers a nearly negligible ROI of 0.01%. While the projected growth is minimal, the initial investment value of $138,600 remains relatively stable. This might attract risk-averse investors who prioritize stability over high returns.
+
+# Zip Code 49265:
+
+* Investment Value: $159,600
+
+* Predicted Sale Price after 2 years: $158,830.09
+
+* Predicted ROI: -0.48%
+
+In contrast to the top 4 zipcodes, zip code 49265 displays a negative ROI of -0.48%, indicating a potential loss based on the projected sale price after 2 years. Investors might want to exercise caution with this zip code, as it suggests a declining property value trend.
+
+## Recommendations 
+* Zipcodes 48822, 49309, 29645, and 48835 stand out as the top investment choices based on their projected ROIs and anticipated property value growth over the next 2 years. Considering these insights, we strongly advise Boma Yangu to consider these options for their investment prospects. These selections offer a compelling blend of attractive sale prices and favorable returns on investment, all while accounting for Boma Yangu's risk threshold.
+* For zip code 49265, we strongly urge Boma Yangu to approach it with caution, as it signals the possibility of incurring a loss.
+## Next Steps 
+* Collect more data with added exogenous variables like economic indicators, interest rates and demographic data that could potentially influence the housing price values, then model them in a SARIMAX model. This could lead to better predictions and better models overall.
 * Build more complex and advanced models such as RNNs, e.g. LSTMs which make use of neural networks. These algorithms are more powerful than traditional time series. They are able to capture any complex patterns in our time series, hence leading to better forecasts/predictions.
+
+
 
 
 
