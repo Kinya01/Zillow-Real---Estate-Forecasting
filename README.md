@@ -96,7 +96,63 @@ There were noticeable dips around 2008-2010, which corresponded with the global 
 * The scatter plot provides insights into the trade-off between risk (volatility in property values) and return (historical appreciation). Zip codes closer to the top-left corner offer higher ROI with lower risk, making them more desirable for investment.
 
 # Methods
-We used Time Series Modelling Techniques such as ARIMA, SARIMA, and Facebook Prophet
+We used the ARIMA time series modelling technique as our baseline model and improved it through SARIMA modelling. SARIMA extends the capabilities of ARIMA by incorporating seasonal components of the time series data into the model. We then used the best parameters to select the top 5 best zipcodes based on the predicted sales and return on investment uisng the following criteria:
+* Treating the last data point of the time series as our Current Value.
+
+* Projected Value taken as the summation of the current value and the forecasted value.
+
+* Using the Current Value and the Projected Value to calculate the ROI for each zipcode.
+
+* Sorting the zipcodes by ROIs to finally determine the top 5 best zipcodes.
+
+### Conclusion and Recommendations
+As per the analysis, the top 5 best Zipcodes to invest in based on a combination of predicted sale price and positive predicted ROI, which indicates the potential for profitable return include:
+
+Zip Code 48822:
+
+* Predicted Sale Price: $185,300
+
+* Predicted ROI: 33.00%
+
+* Zip Code 48822 emerges as the most promising investment opportunity. With a high predicted sale price and a positive ROI of 33.00%, investors could expect attractive returns from properties in this area.
+
+Zip Code 40107:
+
+* Predicted Sale Price: $148,300
+
+* Predicted ROI: 2.95e+49%
+
+* While the predicted ROI for Zip Code 40107 is notably high, the comparatively modest predicted sale price adds to the appeal of considering this area for investment
+
+Zip Code 48894:
+
+* Predicted Sale Price: $161,000
+
+* Predicted ROI: 0.44%
+
+* With a positive ROI of 0.44%, Zip Code 48894 presents a stable investment option. Although the ROI is relatively low compared to some others, the predicted sale price contributes to its attractiveness.
+
+Zip Code 48835:
+
+* Predicted Sale Price: $138,600
+
+* Predicted ROI: 0.43%
+
+* Similarly, Zip Code 48835 offers a relatively low but still positive ROI of 0.43%. The predicted sale price supports its consideration for investment.
+
+Zip Code 15486:
+
+* Predicted Sale Price: $124,300
+
+* Predicted ROI: 0.35%
+
+* Rounding up the top 5, Zip Code 15486 demonstrates a positive ROI of 0.35%. While the ROI is not the highest, the predicted sale price contributes positively to its investment potential.
+## Next Steps
+* Collect more data with added exogenous variables like economic indicators, interest rates and demographic data that could potentially influence the housing price values, then model them in a SARIMAX model. This could lead to better predictions and better models overall
+* Build more complex and advanced models such as RNNs, e.g. LSTMs which make use of neural networks. These algorithms are more powerful than traditional time series. They are able to capture any complex patterns in our time series, hence leading to better forecasts/predictions.
+
+
+
 
 
 
